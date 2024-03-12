@@ -10,7 +10,7 @@ import { FaTwitter } from 'react-icons/fa6';
 const HeroSection = () => {
   return (
     <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 2xl:flex-row gap-2 2xl:gap-8 lg:gap-8 w-full min-h-screen  py-12 relative'>
-        <BackgroundBeams className='' />
+        <BackgroundBeams className='z-0' />
         <div className='flex w-full h-full items-end justify-center 2xl:items-center 2xl:justify-end lg:items-center lg:justify-end'>
         <Avatar className=" 2xl:h-[500px] 2xl:w-[500px] lg:h-96 lg:w-96 h-72 w-72 shadow-lg shadow-slate-900/50 " >
             <AvatarImage src="/AVATAR.jpg" alt="avatar" />
@@ -27,7 +27,7 @@ const HeroSection = () => {
             <h1 className='text-xl 2xl:text-3xl lg:text-2xl font-semibold'>
                 Fullstack web developer
             </h1>
-            <div className='flex flex-col w-full pl-2 2xl:pl-4 lg:pl-4 gap-2 text-lg font-semibold mt-2'>
+            <div className='flex flex-col w-full pl-2 2xl:pl-4 lg:pl-4 gap-2 text-lg font-meduim mt-2'>
                 <div className='flex flex-row 2xl:gap-6 lg:gap-6 gap-2 items-center'>
                     <svg viewBox="0 0 1024 1024"  version="1.1" width="40px" height="40px" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M512 960c-92.8 0-160-200-160-448S419.2 64 512 64s160 200 160 448-67.2 448-160 448z m0-32c65.6 0 128-185.6 128-416S577.6 96 512 96s-128 185.6-128 416 62.4 416 128 416z" fill="#050D42"></path><path d="M124.8 736c-48-80 92.8-238.4 307.2-363.2S852.8 208 899.2 288 806.4 526.4 592 651.2 171.2 816 124.8 736z m27.2-16c33.6 57.6 225.6 17.6 424-97.6S905.6 361.6 872 304 646.4 286.4 448 401.6 118.4 662.4 152 720z" fill="#050D42"></path><path d="M899.2 736c-46.4 80-254.4 38.4-467.2-84.8S76.8 368 124.8 288s254.4-38.4 467.2 84.8S947.2 656 899.2 736z m-27.2-16c33.6-57.6-97.6-203.2-296-318.4S184 246.4 152 304 249.6 507.2 448 622.4s392 155.2 424 97.6z" fill="#050D42"></path><path d="M512 592c-44.8 0-80-35.2-80-80s35.2-80 80-80 80 35.2 80 80-35.2 80-80 80zM272 312c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48zM416 880c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z m448-432c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z" fill="#2F4BFF"></path></g></svg>
                     <h3>
@@ -53,17 +53,17 @@ const HeroSection = () => {
                     </h3>
                 </div>
             </div>
-            <div className='grid grid-cols-4 w-full gap-4 2xl:gap-8 lg:gap-6 mt-6 items-center justify-center'>
-                <div className='flex w-full items-center justify-center'>
-                    <AiOutlineYoutube className='w-16 h-16' />
+            <div className='grid grid-cols-4 2xl:flex 2xl:flex-row lg:flex lg:flex-row w-full gap-4 2xl:gap-8 lg:gap-6 mt-6 2xl:pl-4 lg:pl-4'>
+                <div className='flex  items-center justify-center'>
+                    <AiOutlineYoutube className='w-16 h-16 ' />
                 </div>
-                <div className='flex w-full items-center justify-center'>
+                <div className='flex  items-center justify-center'>
                     <FaGithub className='w-12 h-12 '/>
                 </div>
-                <div className='flex w-full items-center justify-center'>
+                <div className='flex items-center justify-center'>
                     <FaInstagram className='w-12 h-12'/>
                 </div>
-                <div className='flex w-full items-center justify-center'>
+                <div className='flex  items-center justify-center'>
                    <FaTwitter className='w-12 h-12'/> 
                 </div>
             </div>
