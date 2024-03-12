@@ -4,15 +4,17 @@ import { Loader2 } from 'lucide-react'
 import { AiOutlineYoutube } from "react-icons/ai";
 import { FaGithub, FaInstagram } from 'react-icons/fa';
 import { IoIosArrowDown } from 'react-icons/io';
+import { BackgroundBeams } from './ui/Background-beams';
 
 const HeroSection = () => {
   return (
     <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 2xl:flex-row gap-2 2xl:gap-8 lg:gap-8 w-full min-h-screen  py-12 relative'>
+        <BackgroundBeams className='' />
         <div className='flex w-full h-full items-end justify-center 2xl:items-center 2xl:justify-end lg:items-center lg:justify-end'>
-        <Avatar  className=" 2xl:h-[500px] 2xl:w-[500px] lg:h-96 lg:w-96 h-72 w-72 shadow-lg shadow-slate-900/50" >
+        <Avatar className=" 2xl:h-[500px] 2xl:w-[500px] lg:h-96 lg:w-96 h-72 w-72 shadow-lg shadow-slate-900/50 " >
             <AvatarImage src="/AVATAR.jpg" alt="avatar" />
-            <AvatarFallback>
-                <Loader2 className='w-full h-full animate-spin text-neutral-500 opacity-30' />
+            <AvatarFallback className='bg-[#FFC100]'>
+                <Loader2 className='w-[50%] h-[50%] animate-spin opacity-30 text-slate-500' />
             </AvatarFallback>
         </Avatar>
         </div>
@@ -55,7 +57,7 @@ const HeroSection = () => {
                 <FaInstagram className='w-12 h-12'/>
             </div>
         </div>
-        <div className='absolute bottom-10 left-0 flex flex-col w-full items-center justify-center z-50  '>
+        <div className='absolute 2xl:bottom-10 lg:bottom-10 bottom-0 left-0 flex flex-col w-full items-center justify-center z-50  '>
             <h1 className='text-lg font-meduim'>
                 Explore my work
             </h1>
