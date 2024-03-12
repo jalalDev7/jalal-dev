@@ -4,7 +4,7 @@ const TopNavbar = () => {
     
   return (
 
-        <div className="w-full grid grid-cols-5 h-12 items-center justify-center py-2 text-sm 2xl:text-lg lg:text-lg bg-zinc-400">
+        <div className="grid grid-cols-5 h-12 items-center justify-center py-2 text-sm 2xl:text-lg lg:text-lg bg-zinc-400">
             <div className='group flex w-full h-full rounded-lg items-center justify-center  font-semibold cursor-pointer'>
                 <div className='relative py-1'>
                     Home
