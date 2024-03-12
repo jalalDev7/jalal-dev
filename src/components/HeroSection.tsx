@@ -5,6 +5,7 @@ import { AiOutlineYoutube } from "react-icons/ai";
 import { FaGithub, FaInstagram } from 'react-icons/fa';
 import { IoIosArrowDown } from 'react-icons/io';
 import { BackgroundBeams } from './ui/Background-beams';
+import { FaTwitter } from 'react-icons/fa6';
 
 const HeroSection = () => {
   return (
@@ -54,8 +55,9 @@ const HeroSection = () => {
             </div>
             <div className='flex flex-row w-full px-8 space-x-8 mt-6 items-center justify-start'>
                 <AiOutlineYoutube className='w-16 h-16' />
-                <FaGithub className='w-12 h-12'/>
+                <FaGithub className='w-12 h-12 '/>
                 <FaInstagram className='w-12 h-12'/>
+                <FaTwitter className='w-12 h-12'/>
             </div>
         </div>
         <div className='absolute 2xl:bottom-10 lg:bottom-10 bottom-0 left-0 flex flex-col w-full items-center justify-center z-50  '>
