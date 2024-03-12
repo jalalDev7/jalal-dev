@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import TopNavbar from "@/components/TopNavbar";
+import WebDevSection from "@/components/WebDevSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <MaxWidthWrapper>
         <TopNavbar />
         <HeroSection />
+        <WebDevSection />
       </MaxWidthWrapper>
     </main>
   );

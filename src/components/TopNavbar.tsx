@@ -6,7 +6,7 @@ const TopNavbar = () => {
     
   return (
 
-        <div className=" w-full grid grid-cols-5 h-12 items-center justify-center gap-2 py-2 text-md 2xl:text-lg lg:text-lg">
+        <div className="w-full grid grid-cols-5 h-12 items-center justify-center py-2 text-sm 2xl:text-lg lg:text-lg">
             <div className='group flex w-full h-full rounded-lg items-center justify-center  font-semibold cursor-pointer'>
                 <div className='relative py-1'>
                     Home
