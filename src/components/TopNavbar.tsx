@@ -19,7 +19,7 @@ const TopNavbar = () => {
                     <div className=' group-active:scale-x-100 group-active:opacity-100 transition-all duration-200 ease-in-out scale-x-0 group-hover:scale-x-100 group-hover:opacity-100 opacity-0 w-full absolute bottom-0 left-0 h-1.5 rounded-lg bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500'/>
                 </div>
             </div>
-            <div className='group flex w-full h-full rounded-lg items-center justify-center text-2xl 2xl:text-3xl lg:text-3xl font-bold cursor-pointer'>
+            <div className='group flex w-full h-full rounded-lg items-center justify-center text-xl 2xl:text-3xl lg:text-3xl font-bold cursor-pointer'>
                 <div className='relative pb-1'>
                     JDev
                     <div className='  opacity-100 w-full absolute bottom-0 left-0 h-1.5 rounded-lg bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500'/>
