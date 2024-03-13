@@ -6,7 +6,7 @@ import {GridBackgroundDemo} from "@/components/ui/BackgroundGrid"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col w-full bg-zinc-100 snap-y snap-mandatory overflow-scroll ">
+    <main className="flex min-h-screen flex-col w-full bg-zinc-100 snap-y snap-mandatory">
       <MaxWidthWrapper className="snap-center">
         <TopNavbar />
         <HeroSection />
