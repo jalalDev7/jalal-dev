@@ -8,6 +8,7 @@ import { TypewriterEffectSmooth } from './ui/typewriter-effect'
 import { BackgroundGradient } from './ui/background-gradient'
 import { GridBackgroundDemo } from './ui/BackgroundGrid'
 import CardSection from './CardSection'
+import HoverMiniCards from './HoverMiniCards'
 
 const WebDevSection = () => {
     const words = [
@@ -71,6 +72,12 @@ const WebDevSection = () => {
         <div className='flex flex-col w-full h-full items-center'>
             <TypewriterEffectSmooth words={words} className='mt-16' />
             <CardSection />
+            <div className='flex flex-col 2xl:flex-row w-full items-center justify-center gap-8 '>
+              {/*<HoverMiniCards />*/}
+              <div className='flex w-full'>
+                hello
+              </div>
+            </div>
         </div>
     </div>
   )
