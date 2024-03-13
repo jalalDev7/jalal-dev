@@ -31,7 +31,7 @@ const WebDevSection = () => {
       ];
   return (
     <div className='flex flex-col w-full min-h-dvh justify-center text-5xl font-semibold pt-4'>
-        <div className='grid 2xl:grid-cols-6 lg:grid-cols-3 grid-cols-3 w-full h-fit text-slate-500 cursor-default space-y-6 2xl:space-y-0 lg:space-y-0'>
+        <div className='grid 2xl:grid-cols-6 lg:grid-cols-3 grid-cols-3 w-full h-fit text-slate-500 cursor-default space-y-6 2xl:space-y-0 lg:space-y-0 2xl:mt-12'>
             <div className='flex flex-col gap-2 w-full  items-center justify-center hover:text-black duration-500 transition-all ease-in-out hover:drop-shadow-md hover:-translate-y-4 hover:scale-110'>
                 <FaReact className='w-16 h-16 lg:w-32 lg:h-32 2xl:w-32 2xl:h-32' />
                 <h1 className='text-lg lg:text-xl 2xl:text-xl font-semibold'>
@@ -69,7 +69,7 @@ const WebDevSection = () => {
                 </h1>
             </div>
         </div>
-        <div className='flex flex-col w-full h-full items-center'>
+        <div className='flex flex-col w-full h-fit items-center'>
             <TypewriterEffectSmooth words={words} className='mt-16' />
             <div className='flex w-full flex-row gap-2 2xl:gap-8 mt-8'>
               <div className='flex w-full items-center justify-end'>
