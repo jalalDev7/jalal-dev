@@ -73,10 +73,10 @@ const WebDevSection = () => {
             <TypewriterEffectSmooth words={words} className='mt-16' />
             <CardSection />
             <div className='flex flex-col 2xl:flex-row w-full items-center justify-center gap-8 '>
-              {/*<HoverMiniCards />*/}
+              {/*<HoverMiniCards />
               <div className='flex w-full'>
                 hello
-              </div>
+              </div>*/}
             </div>
         </div>
     </div>
