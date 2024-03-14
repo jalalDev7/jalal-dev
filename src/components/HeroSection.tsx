@@ -1,11 +1,14 @@
 import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
 import { Loader2 } from 'lucide-react'
-import { AiOutlineYoutube } from "react-icons/ai";
 import { FaGithub, FaInstagram } from 'react-icons/fa';
 import { IoIosArrowDown } from 'react-icons/io';
 import { BackgroundBeams } from './ui/Background-beams';
 import { FaTwitter } from 'react-icons/fa6';
+import Link from 'next/link';
+import { TiSocialYoutubeCircular } from 'react-icons/ti';
+import { PiYoutubeLogoBold } from 'react-icons/pi';
+import { SiYoutubemusic } from 'react-icons/si';
 
 const HeroSection = () => {
   return (
@@ -58,18 +61,26 @@ const HeroSection = () => {
                     </h3>
                 </div>
             </div>
-            <div className='grid grid-cols-4 2xl:flex 2xl:flex-row lg:flex lg:flex-row w-full gap-4 2xl:gap-8 lg:gap-6 mt-6 2xl:pl-4 lg:pl-4'>
-                <div className='flex  items-center justify-center'>
-                    <AiOutlineYoutube className='w-16 h-16 ' />
+            <div className='z-50 grid grid-cols-4 2xl:flex 2xl:flex-row lg:flex lg:flex-row w-full gap-4 2xl:gap-8 lg:gap-6 mt-6 2xl:pl-4 lg:pl-4'>
+                <div className='flex items-center justify-center'>
+                    <Link href="https://www.youtube.com/jalalhitech" target='_blank'>
+                        <SiYoutubemusic className='w-12 h-12 hover:text-orange-500 transition-all duration-500 ease-in-out'/>
+                    </Link>
                 </div>
                 <div className='flex  items-center justify-center'>
-                    <FaGithub className='w-12 h-12 '/>
+                    <Link href="https://github.com/jalalDev7" target='_blank'>
+                        <FaGithub className='w-12 h-12 hover:text-orange-500 transition-all duration-500 ease-in-out'/>
+                    </Link>
                 </div>
                 <div className='flex items-center justify-center'>
-                    <FaInstagram className='w-12 h-12'/>
+                    <Link href="https://www.instagram.com/jalalhitech" target='_blank'>
+                        <FaInstagram className='w-12 h-12 hover:text-orange-500 transition-all duration-500 ease-in-out'/>
+                    </Link>                    
                 </div>
                 <div className='flex  items-center justify-center'>
-                   <FaTwitter className='w-12 h-12'/> 
+                    <Link href="https://www.x.com/jalalhitech" target='_blank'>
+                        <FaTwitter className='w-12 h-12 hover:text-orange-500 transition-all duration-500 ease-in-out'/>
+                    </Link> 
                 </div>
             </div>
         </div>
