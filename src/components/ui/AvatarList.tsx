@@ -3,11 +3,11 @@ import Image from "next/image"
 
 
 const data = [
-    {id: 1, src:"/avatar5.jpg"},
+    {id: 1, src:"/AVATAR5.jpg"},
     {id: 2, src:"/avatar4.png"},
     {id: 3, src:"/avatar3.png"},
     {id: 4, src:"/avatar2.png"},
-    {id: 5, src:"/avatar6.jpg"},
+    {id: 5, src:"/AVATAR6.jpg"},
 ]
 
 const AvatarList = () => {
