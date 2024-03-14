@@ -46,13 +46,11 @@ export default function Home() {
               <div className="flex flex-col w-full text-2xl items-center justify-center p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
                 <AvatarList />
               </div>
+
               <div className="flex flex-col h-[350px] text-2xl w-full items-center justify-center p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
                 SOON...
               </div>
-              <div className="flex flex-col h-[350px] text-2xl w-full items-center justify-center p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
-                SOON...
-              </div>
-              <div className="flex flex-col h-[350px] text-2xl w-full items-center justify-center p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
+              <div className="2xl:col-span-2 flex flex-col h-[350px] text-2xl w-full items-center justify-center p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
                 SOON...
               </div>
             </div>
