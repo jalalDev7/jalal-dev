@@ -86,9 +86,9 @@ const WebDevSection = () => {
             </div>
             <CardSection />
         </div>
-        <div className='absolute 2xl:bottom-4 lg:bottom-6 bottom-0 left-0 flex flex-col w-full items-center justify-center z-50  '>
-            <h1 className='text-lg font-meduim'>
-                Explore my work
+        <div className='absolute gap-2 2xl:bottom-4 lg:bottom-6 bottom-0 left-0 flex flex-col w-full items-center justify-center z-50  '>
+            <h1 className='text-sm font-meduim'>
+                if ( like ) return ScrollTo(next)
             </h1>
             <IoIosArrowDown className='animate-bounce duration-700 w-[40px] h-[40px] opacity-35' />
         </div>
