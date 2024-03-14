@@ -23,7 +23,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col bg-slate-950 grid-cols-1 gap-0 w-full min-h-screen items-start justify-start relative text-white snap-start" id="workTwo">
         <LampContainer className="flex w-full h-fit ">
-          <div className="text-xl 2xl:text-7xl lg:text-2xl font-semibold pb-8 bg-clip-text text-transparent bg-gradient-to-b from-cyan-500 to-cyan-200 ">
+          <div className="text-2xl 2xl:text-7xl lg:text-2xl font-semibold pb-8 bg-clip-text text-transparent bg-gradient-to-b from-cyan-500 to-cyan-200 opacity-60 ">
             Explore some of my features
           </div>
         </LampContainer>
