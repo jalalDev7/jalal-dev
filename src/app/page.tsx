@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import TopNavbar from "@/components/TopNavbar";
 import WebDevSection from "@/components/WebDevSection";
+import AvatarList from "@/components/ui/AvatarList";
 import {GridBackgroundDemo} from "@/components/ui/BackgroundGrid"
 import ClickMeButton from "@/components/ui/ClickMeButton";
 import { CardPattern, EvervaultCard } from "@/components/ui/evervault-card";
@@ -23,7 +24,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col bg-slate-950 grid-cols-1 gap-0 w-full min-h-screen items-start justify-start relative text-white snap-start" id="workTwo">
         <LampContainer className="flex w-full h-fit ">
-          <div className="text-2xl 2xl:text-7xl lg:text-2xl font-semibold pb-8 bg-clip-text text-transparent bg-gradient-to-b from-cyan-500 to-cyan-200 opacity-60 ">
+          <div className="text-2xl 2xl:text-7xl lg:text-2xl font-semibold pb-8 bg-clip-text text-transparent bg-gradient-to-b from-cyan-500 from-10% to-cyan-200 to-90% ">
             Explore some of my features
           </div>
         </LampContainer>
@@ -43,7 +44,7 @@ export default function Home() {
                 <ClickMeButton />
               </div>
               <div className="flex flex-col w-full text-2xl items-center justify-center p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
-                SOON...
+                <AvatarList />
               </div>
               <div className="flex flex-col h-[350px] text-2xl w-full items-center justify-center p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
                 SOON...

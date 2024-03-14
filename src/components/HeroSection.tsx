@@ -6,8 +6,6 @@ import { IoIosArrowDown } from 'react-icons/io';
 import { BackgroundBeams } from './ui/Background-beams';
 import { FaTwitter } from 'react-icons/fa6';
 import Link from 'next/link';
-import { TiSocialYoutubeCircular } from 'react-icons/ti';
-import { PiYoutubeLogoBold } from 'react-icons/pi';
 import { SiYoutubemusic } from 'react-icons/si';
 
 const HeroSection = () => {

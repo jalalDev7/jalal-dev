@@ -5,10 +5,7 @@ import { FaReact } from 'react-icons/fa'
 import { SiPrisma, SiTailwindcss, SiTrpc } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { TypewriterEffectSmooth } from './ui/typewriter-effect'
-import { BackgroundGradient } from './ui/background-gradient'
-import { GridBackgroundDemo } from './ui/BackgroundGrid'
 import CardSection from './CardSection'
-import HoverMiniCards from './HoverMiniCards'
 import { IoIosArrowDown } from 'react-icons/io'
 
 const WebDevSection = () => {
