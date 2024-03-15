@@ -9,6 +9,7 @@ import {GridBackgroundDemo} from "@/components/ui/BackgroundGrid"
 import ClickMeButton from "@/components/ui/ClickMeButton";
 import { LampContainer } from "@/components/ui/lamp";
 import {SparklesPreview} from "@/components/SparklesComponent";
+import SliderShow from "@/components/SliderShow";
 
 export default function Home() {
   return (
@@ -55,7 +56,7 @@ export default function Home() {
                   <ProductTemplate />
                 </div>
                 <div className="2xl:col-span-2 flex flex-col text-2xl w-full items-center justify-center p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
-                    SOON...
+                    <SliderShow/>
                 </div>
               </div>
             </div>
