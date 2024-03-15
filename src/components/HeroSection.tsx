@@ -14,7 +14,7 @@ const HeroSection = () => {
         <BackgroundBeams className='z-0' />
         <div className='flex w-full h-full items-end justify-center 2xl:items-center 2xl:justify-end lg:items-center lg:justify-end'>
         <Avatar className=" 2xl:h-[500px] 2xl:w-[500px] lg:h-96 lg:w-96 h-72 w-72 shadow-lg shadow-slate-900/50 " >
-            <AvatarImage src="/AVATAR.jpg" alt="avatar" />
+            <AvatarImage src="/AVATAR.webp" alt="avatar" />
             <AvatarFallback className='bg-[#FFC100]'>
                 <Loader2 className='w-[50%] h-[50%] animate-spin opacity-30 text-slate-500' />
             </AvatarFallback>
