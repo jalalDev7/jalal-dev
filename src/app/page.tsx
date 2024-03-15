@@ -55,7 +55,7 @@ export default function Home() {
                 <div className="flex flex-col text-2xl w-full items-center justify-center ">
                   <ProductTemplate />
                 </div>
-                <div className="2xl:col-span-2 flex flex-col text-2xl w-full items-center justify-center p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
+                <div className="2xl:col-span-2 hidden 2xl:flex flex-col text-2xl w-full items-center justify-center p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
                     <SliderShow/>
                 </div>
               </div>
