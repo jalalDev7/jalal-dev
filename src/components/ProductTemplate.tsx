@@ -21,8 +21,8 @@ const ProductTemplate = () => {
                 </div>
 
                 
-                <div className='flex w-full py-4 px-2 2xl:px-4 text-sm font-semibold text-white cursor-pointer'>
-                    <div className='flex w-fit  rounded-2xl bg-slate-500 text-slate-950'>
+                <div className='flex w-full py-4 px-2 2xl:px-4 text-sm font-semibold text-white '>
+                    <div className='flex w-fit  rounded-2xl bg-slate-500 text-slate-950 cursor-pointer'>
                         <h1 className='px-2 py-1 text-white'>
                             Buy
                         </h1>
