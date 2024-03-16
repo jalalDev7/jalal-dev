@@ -77,7 +77,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col  bg-slate-950 grid-cols-1 gap-0 w-full min-h-screen items-start justify-start relative text-white snap-start pb-4" ref={workTwotDiv} id="componentSection">
           <LampContainer className="flex w-full h-fit relative ">
-            <div className="-translate-y-12 2xl:-translate-y-6 text-xl 2xl:text-7xl lg:text-2xl font-semibold pb-8 drop-shadow-[5px_5px_8px_#02a9ac] bg-clip-text text-transparent bg-gradient-to-b from-cyan-400 from-10% to-cyan-100 to-70% ">
+            <div className="-translate-y-12 2xl:-translate-y-6 text-xl lg:text-5xl 2xl:text-7xl font-semibold pb-8 drop-shadow-[5px_5px_8px_#02a9ac] bg-clip-text text-transparent bg-gradient-to-b from-cyan-400 from-10% to-cyan-100 to-70% ">
               Explore some of my features
             </div>
             <div className="absolute top-0 bottom-0 flex w-full h-full">
@@ -98,7 +98,7 @@ export default function Home() {
                   <div className="flex flex-col items-center justify-center  p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
                     <ClickMeButton />
                   </div>
-                  <div className="flex flex-col lg:col-span-2 2xl:col-span-1 w-full text-2xl items-center justify-center  p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
+                  <div className="flex flex-col lg:col-span-2 2xl:col-span-1 w-full text-2xl items-center justify-center  py-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
                     <AvatarList />
                   </div>
                   <div className="flex flex-col text-2xl lg:col-span-2 2xl:col-span-1 items-center justify-center ">
