@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { BiLogoTypescript } from 'react-icons/bi'
 import { FaReact } from 'react-icons/fa'
 import { SiPrisma, SiTailwindcss, SiTrpc } from 'react-icons/si'
@@ -8,7 +8,7 @@ import { TypewriterEffectSmooth } from './ui/typewriter-effect'
 import CardSection from './CardSection'
 import { IoIosArrowDown } from 'react-icons/io'
 
-const WebDevSection = () => {
+const WebDevSection = ({children}: {children:ReactNode}) => {
     const words = [
         {
           text: "Build",
@@ -70,14 +70,7 @@ const WebDevSection = () => {
         <div className='flex flex-col w-full h-full items-center'>
             <TypewriterEffectSmooth words={words} className='mt-16 2xl:mt-28' />
 
-            <div className='flex flex-row w-full items-center justify-center gap-2 2xl:gap-8 mt-8'>
-                <button className='px-4 2xl:px-8 py-2 bg-black text-white text-lg 2xl:text-2xl lg:text-2xl border-2 border-black rounded-lg'>
-                  Explore more
-                </button>
-                <button className='px-4 2xl:px-8 py-2  text-black text-lg 2xl:text-2xl lg:text-2xl border-2 border-black rounded-lg'>
-                  Hire me
-                </button>
-            </div>
+            {children}
 
             <CardSection />
         </div>
