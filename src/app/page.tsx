@@ -13,7 +13,7 @@ import SliderShow from "@/components/SliderShow";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col w-full bg-zinc-100 snap-y snap-proximity">
+    <main className="flex min-h-screen flex-col w-full bg-zinc-100 snap-y snap-proximity overflow-x-clip">
       <div className="flex w-full min-h-screen snap-start">
         <MaxWidthWrapper className="snap-start min-h-screen">
           <TopNavbar />
@@ -36,7 +36,7 @@ export default function Home() {
             <SparklesPreview />
           </div>
         </LampContainer>
-        <div className="flex w-full h-full -translate-y-8">
+        <div className="flex h-full w-full -translate-y-8">
           <MaxWidthWrapper>
             <div className="flex w-full">
               <div className="grid grid-cols-1 2xl:grid-cols-3 w-full gap-8 transition-all duration-500 ease-in-out">
@@ -48,7 +48,7 @@ export default function Home() {
                       </h1>
                     </div>
                 </div>
-                <div className="flex flex-col w-full items-center justify-center  p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
+                <div className="flex flex-col items-center justify-center  p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
                   <ClickMeButton />
                 </div>
                 <div className="flex flex-col w-full text-2xl items-center justify-center  p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
