@@ -73,7 +73,7 @@ export default function Home() {
           </MaxWidthWrapper>
         </GridBackgroundDemo>
       </div>
-      <div className="flex flex-col  bg-zinc-950 grid-cols-1 gap-0 w-full min-h-screen items-start justify-start relative text-white snap-start pb-4" ref={workTwotDiv} id="componentSection">
+      <div className="flex flex-col  bg-slate-950 grid-cols-1 gap-0 w-full min-h-screen items-start justify-start relative text-white snap-start pb-4" ref={workTwotDiv} id="componentSection">
         <LampContainer className="flex w-full h-fit relative ">
           <div className="-translate-y-12 2xl:-translate-y-6 text-xl 2xl:text-7xl lg:text-2xl font-semibold pb-8 drop-shadow-[5px_5px_8px_#02a9ac] bg-clip-text text-transparent bg-gradient-to-b from-cyan-400 from-10% to-cyan-100 to-70% ">
             Explore some of my features
@@ -100,7 +100,7 @@ export default function Home() {
                 <div className="flex flex-col w-full text-2xl items-center justify-center  p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
                   <AvatarList />
                 </div>
-                <div className="flex flex-col text-2xl w-full items-center justify-center ">
+                <div className="flex flex-col text-2xl items-center justify-center ">
                   <ProductTemplate />
                 </div>
                 <div className="2xl:col-span-2 hidden 2xl:flex flex-col text-2xl w-full items-center justify-center p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
