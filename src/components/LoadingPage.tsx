@@ -1,12 +1,12 @@
 import { Loader2 } from 'lucide-react'
+import { useState } from 'react'
 
 
 const LoadingPage = () => {
 
   return (
-    <div className='flex min-w-screen min-h-screen items-center justify-center bg-zinc-100'>
-        
-        <Loader2 className='w-32 h-32 animate-spin' />
+    <div className='flex flex-col lg:flex-row min-w-screen min-h-screen items-center justify-center bg-zinc-100 '>
+        <Loader2 className="w-44 h-44 animate-spin" />
     </div>
   )
 }
