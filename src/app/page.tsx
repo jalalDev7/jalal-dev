@@ -23,7 +23,7 @@ export default function Home() {
       <main className="flex min-h-screen flex-col w-full bg-zinc-100 snap-y snap-proximity overflow-x-clip">
         <div className="flex w-full min-h-screen snap-start" ref={startDiv} id="startSection"  >
           <MaxWidthWrapper className="snap-start min-h-screen">
-          <div className="absolute top-0 left-0 inset-0 grid grid-cols-5 h-12 items-center justify-center py-2 text-sm 2xl:text-lg lg:text-lg">
+          <div className="z-50 absolute top-0 left-0 inset-0 grid grid-cols-5 h-12 items-center justify-center py-2 text-sm 2xl:text-lg lg:text-lg">
               <div className='group flex w-full h-full rounded-lg items-center justify-center  font-semibold cursor-pointer'>
                   <div className='relative py-1'>
                       Home
