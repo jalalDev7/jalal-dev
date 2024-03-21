@@ -61,6 +61,7 @@ export default function Home() {
         </div>
         <div className="flex w-full min-h-screen  snap-start" ref={workDiv} id="workSection">
           <GridBackgroundDemo >
+            
             <MaxWidthWrapper>
               <WebDevSection >
                 <div className='flex flex-row w-full items-center justify-center gap-2 2xl:gap-8 mt-8'>
