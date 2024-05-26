@@ -21,8 +21,10 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { TbBasketDollar } from "react-icons/tb";
-import { FaReact } from "react-icons/fa";
+import { FaGithub, FaReact } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { IoIosArrowDropdown } from "react-icons/io";
+import RandomPicker from "@/components/RandomPicker";
 
 export default function Home() {
   const startDiv = useRef<HTMLDivElement>(null);
@@ -30,7 +32,7 @@ export default function Home() {
   const workTwotDiv = useRef<HTMLDivElement>(null);
   return (
     <Suspense fallback={<LoadingPage />}>
-      <main className="flex min-h-screen flex-col w-full bg-zinc-100 snap-y snap-proximity overflow-x-clip">
+      <main className="flex min-h-screen flex-col w-full bg-zinc-100 snap-y snap-proximity overflow-x-clip text-black">
         <div
           className="flex w-full min-h-screen snap-start"
           ref={startDiv}
@@ -146,19 +148,19 @@ export default function Home() {
         <div className="flex w-full min-h-screen snap-start" id="workThree">
           <GridBackgroundDemo className="flex w-full dark:bg-grid-small-orange-500/[0.5] bg-grid-small-orange-500/[0.5]">
             <MaxWidthWrapper>
-              <div className="flex flex-row gap-4 items-center text-orange-500 mt-16 mb-16">
-                <MdBusinessCenter className="size-12" />
-                <h1 className="text-5xl font-semibold ">
+              <div className="flex flex-row gap-4 items-center justify-center w-full text-orange-500 my-16">
+                <MdBusinessCenter className="size-8 lg:size-16" />
+                <h1 className="text-xl lg:text-6xl font-bold ">
                   Explore some of my projects.
                 </h1>
               </div>
               <div className="flex flex-col-reverse lg:flex-row justify-between relative">
                 <div className="flex flex-col inset-0 items-start justify-start mt-8 w-full ">
                   <div className="flex flex-row gap-4 items-center mt-16">
-                    <div className="flex size-10 bg-orange-500 rounded-full" />
+                    <div className="flex size-10 bg-orange-500 rounded-full border-2 border-black" />
                     <h3 className="text-4xl font-medium">1. My-rabit.com</h3>
                   </div>
-                  <p className="flex max-w-[750px] text-md font-medium px-4 mt-4 text-pretty">
+                  <p className="flex max-w-[750px] text-sm lg:text-md font-medium px-4 mt-8 text-pretty">
                     Introducing our all-in-one SaaS platform designed for
                     content creators and influencers! Our website provides a
                     customizable link where you can showcase all your social
@@ -171,13 +173,18 @@ export default function Home() {
                     Simplify your online presence and maximize your earning
                     potential with our versatile tools!
                   </p>
-                  <div className="flex mt-12 px-4">
+                  <div className="flex flex-row gap-4 mt-12 px-4">
                     <Link href="https://my-rabit.com" target="_blank">
-                      <div className="flex flex-row gap-4 items-center justify-center px-8 py-4 text-2xl font-semibold text-orange-500 border border-orange-500 rounded-2xl">
+                      <div className="flex flex-row gap-4 items-center justify-center px-8 py-4 text-2xl font-semibold text-white  bg-orange-500 rounded-2xl">
                         Visit webiste
                         <MdOpenInNew className="size-10" />
                       </div>
                     </Link>
+
+                    <div className="flex flex-row gap-4 items-center justify-center px-8 py-4 text-2xl font-semibold text-orange-500 border border-orange-500 rounded-2xl">
+                      More info
+                      <IoIosArrowDropdown className="size-10" />
+                    </div>
                   </div>
                 </div>
                 <div className="flex flex-col w-full items-center justify-center">
@@ -452,34 +459,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col-reverse gap-8 lg:flex-row justify-between relative">
-                <div className="flex flex-col inset-0 items-start justify-start mt-8 w-full ">
-                  <div className="flex flex-row gap-2 items-center mt-16">
-                    <h3 className="text-4xl font-medium">
-                      Made from scratch with
-                    </h3>
-                  </div>
-                  <p className="flex max-w-[750px] text-md font-medium  mt-8 text-pretty">
-                    Our SaaS platform was created using cutting-edge
-                    technologies for optimal performance and user experience. We
-                    built it with TypeScript, Next.js, and Prisma for efficient
-                    and scalable development. The UI components are crafted with
-                    React, providing a dynamic and responsive interface. Our
-                    platform features a comprehensive dashboard for managing
-                    profiles, events, appointments, orders, and payments, along
-                    with a notification system to keep users updated. This
-                    robust technology stack ensures a seamless and powerful
-                    solution for content creators and influencers.
-                  </p>
-                  <div className="flex flex-row justify-around items-center text-orange-500 mt-16 w-full">
-                    <SiTypescript className="size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
-                    <FaReact className="size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
-                    <SiNextdotjs className="size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
-                    <SiTailwindcss className="size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
-                    <SiPrisma className="size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
-                    <BiLogoPostgresql className="size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
-                  </div>
-                </div>
+              <div className="flex flex-col gap-8 lg:flex-row justify-between relative">
                 <div className="flex flex-col w-full items-center justify-center">
                   <div
                     style={{
@@ -768,7 +748,131 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+                <div className="flex flex-col inset-0 items-start justify-start  lg:mt-8 w-full ">
+                  <div className="flex flex-row gap-2 items-center mt-16">
+                    <h3 className="text-4xl font-medium">
+                      Made from scratch with
+                    </h3>
+                  </div>
+                  <p className="flex max-w-[750px] text-sm lg:text-md font-medium  mt-8 text-pretty">
+                    Our SaaS platform was created using cutting-edge
+                    technologies for optimal performance and user experience. We
+                    built it with TypeScript, Next.js, and Prisma for efficient
+                    and scalable development. The UI components are crafted with
+                    React, providing a dynamic and responsive interface. Our
+                    platform features a comprehensive dashboard for managing
+                    profiles, events, appointments, orders, and payments, along
+                    with a notification system to keep users updated. This
+                    robust technology stack ensures a seamless and powerful
+                    solution for content creators and influencers.
+                  </p>
+                  <div className="flex flex-row justify-around items-center text-orange-500 mt-16 w-full mb-16">
+                    <SiTypescript className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
+                    <FaReact className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
+                    <SiNextdotjs className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
+                    <SiTailwindcss className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
+                    <SiPrisma className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
+                    <BiLogoPostgresql className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
+                  </div>
+                </div>
               </div>
+              <div className="flex flex-col-reverse lg:flex-row justify-between relative my-8 lg:my-16">
+                <div className="flex flex-col inset-0 items-start justify-start mt-8 w-full ">
+                  <div className="flex flex-row gap-4 items-center mt-16">
+                    <div className="flex size-10 bg-orange-500 rounded-full border-2 border-black" />
+                    <h3 className="text-4xl font-medium">
+                      2. Giveaway winner picker tool
+                    </h3>
+                  </div>
+                  <p className="flex max-w-[750px] text-sm lg:text-md font-medium px-4 mt-8 text-pretty">
+                    I have developed a web application using TypeScript,
+                    Next.js, and React.js. The purpose of this app is to pick
+                    winners from YouTube comments via a video link, using the
+                    Google API. It is free to use and publicly available on
+                    GitHub, providing a simple and transparent solution for
+                    selecting giveaway winners from YouTube comments.
+                  </p>
+                  <div className="flex flex-row gap-4 mt-12 px-4">
+                    <Link href="https://my-rabit.com" target="_blank">
+                      <div className="flex flex-row gap-4 items-center justify-center px-8 py-4 text-2xl font-semibold text-white  bg-orange-500 rounded-2xl">
+                        Visit webiste
+                        <MdOpenInNew className="size-10" />
+                      </div>
+                    </Link>
+                    <Link
+                      href="https://github.com/jalalDev7/random-picker.git"
+                      target="_blank"
+                    >
+                      <div className="flex flex-row gap-4 items-center justify-center px-8 py-4 text-2xl font-semibold text-orange-500 border border-orange-500 rounded-2xl">
+                        Github repo
+                        <FaGithub className="size-10" />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+                <div className="flex flex-col w-full items-center justify-center">
+                  <svg
+                    className="size-[550px] "
+                    viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#000000"
+                  >
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      {" "}
+                      <g id="Flat">
+                        {" "}
+                        <g id="Color">
+                          {" "}
+                          <path
+                            d="M50.55,27.5c0-2.11,1.57-4.44,1-6.34S48.2,18.24,47,16.6s-1.3-4.48-3-5.69-4.35-.42-6.32-1.05S34.11,7,32,7s-3.83,2.24-5.73,2.86S21.59,9.72,20,10.91s-1.75,4-3,5.69-3.85,2.59-4.49,4.56.95,4.23.95,6.34-1.57,4.44-.95,6.34S15.8,36.76,17,38.4s1.3,4.48,3,5.69,4.35.42,6.32,1S29.89,48,32,48s3.83-2.24,5.73-2.86,4.68.14,6.32-1,1.75-4,3-5.69,3.85-2.59,4.49-4.56S50.55,29.61,50.55,27.5Z"
+                            fill="#fccd1d"
+                          ></path>{" "}
+                          <circle
+                            cx="32"
+                            cy="27.5"
+                            fill="#f9a215"
+                            r="14.5"
+                          ></circle>{" "}
+                          <path
+                            d="M33.37,20l1.52,2.63a1.54,1.54,0,0,0,1.06.76L39,24a1.53,1.53,0,0,1,.85,2.56l-2.1,2.22a1.5,1.5,0,0,0-.4,1.22l.36,3a1.57,1.57,0,0,1-2.22,1.58l-2.81-1.27a1.6,1.6,0,0,0-1.32,0l-2.81,1.27A1.57,1.57,0,0,1,26.31,33l.36-3a1.5,1.5,0,0,0-.4-1.22l-2.1-2.22A1.53,1.53,0,0,1,25,24l3-.59a1.54,1.54,0,0,0,1.06-.76L30.63,20A1.59,1.59,0,0,1,33.37,20Z"
+                            fill="#fccd1d"
+                          ></path>{" "}
+                          <polygon
+                            fill="#212529"
+                            points="45 43 45 57 61 57 55 50 61 43 45 43"
+                          ></polygon>{" "}
+                          <polygon
+                            fill="#212529"
+                            points="19 43 19 57 3 57 9 50 3 43 19 43"
+                          ></polygon>{" "}
+                          <rect
+                            fill="#dd051d"
+                            height="14"
+                            width="38"
+                            x="13"
+                            y="39"
+                          ></rect>{" "}
+                          <polygon
+                            fill="#a60416"
+                            points="13 53 19 57 19 53 13 53"
+                          ></polygon>{" "}
+                          <polygon
+                            fill="#a60416"
+                            points="51 53 45 57 45 53 51 53"
+                          ></polygon>{" "}
+                        </g>{" "}
+                      </g>{" "}
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <RandomPicker />
             </MaxWidthWrapper>
           </GridBackgroundDemo>
         </div>
