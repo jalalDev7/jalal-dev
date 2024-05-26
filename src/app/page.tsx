@@ -793,7 +793,10 @@ export default function Home() {
                     selecting giveaway winners from YouTube comments.
                   </p>
                   <div className="flex flex-row gap-4 mt-12 px-4">
-                    <Link href="https://my-rabit.com" target="_blank">
+                    <Link
+                      href="https://random-picker-ten.vercel.app/"
+                      target="_blank"
+                    >
                       <div className="flex flex-row gap-4 items-center justify-center px-8 py-4 text-2xl font-semibold text-white  bg-orange-500 rounded-2xl">
                         Visit webiste
                         <MdOpenInNew className="size-10" />
