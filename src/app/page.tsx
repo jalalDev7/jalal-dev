@@ -158,7 +158,9 @@ export default function Home() {
                 <div className="flex flex-col inset-0 items-start justify-start mt-8 w-full ">
                   <div className="flex flex-row gap-4 items-center mt-16">
                     <div className="flex size-10 bg-orange-500 rounded-full border-2 border-black" />
-                    <h3 className="text-4xl font-medium">1. My-rabit.com</h3>
+                    <h3 className="text-4xl font-medium">
+                      1. My-rabit.com | SAAS
+                    </h3>
                   </div>
                   <p className="flex max-w-[750px] text-sm lg:text-md font-medium px-4 mt-8 text-pretty">
                     Introducing our all-in-one SaaS platform designed for
@@ -781,7 +783,7 @@ export default function Home() {
                   <div className="flex flex-row gap-4 items-center mt-16">
                     <div className="flex size-10 bg-orange-500 rounded-full border-2 border-black" />
                     <h3 className="text-4xl font-medium">
-                      2. Giveaway winner picker tool
+                      2. Winner picker | Tool
                     </h3>
                   </div>
                   <p className="flex max-w-[750px] text-sm lg:text-md font-medium px-4 mt-8 text-pretty">

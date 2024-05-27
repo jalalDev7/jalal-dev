@@ -89,7 +89,7 @@ const RandomPicker = () => {
   return (
     <main className="flex flex-col w-full items-center justify-center gap-8 px-4 text-orange-500 mb-16">
       <h1 className="text-center text-3xl font-semibold text-orange-500">
-        You can easly test it by yourself
+        You can easly try it by yourself
       </h1>
       <ul className="steps font-medium">
         <li className="step step-warning">Choose platform</li>
