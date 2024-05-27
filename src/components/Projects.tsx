@@ -19,17 +19,24 @@ const Projects = () => {
   return (
     <GridBackgroundDemo className="flex w-full dark:bg-grid-small-orange-500/[0.5] bg-grid-small-orange-500/[0.5]">
       <MaxWidthWrapper>
-        <div className="flex flex-row gap-4 items-center justify-center w-full text-orange-500 my-16">
-          <MdBusinessCenter className="size-8 lg:size-16" />
+        <div className="flex flex-row gap-4 items-center justify-center w-full text-black my-16">
           <h1 className="text-xl lg:text-6xl font-bold ">
-            Explore some of my projects.
+            <span className="border-l-4 border-[#F97316] bg-gradient-to-r from-[#F97316]/50 to-[#FF8D86]/15 p-2 ">
+              Explore
+            </span>{" "}
+            some of my{" "}
+            <span className="border-l-4 border-[#F97316] bg-gradient-to-r from-[#F97316]/50 to-[#FF8D86]/15 p-2 ">
+              projects.
+            </span>
           </h1>
         </div>
-        <div className="flex flex-col-reverse lg:flex-row justify-between relative">
+        <div className="flex flex-col lg:flex-row justify-between relative">
           <div className="flex flex-col inset-0 items-start justify-start mt-8 w-full ">
-            <div className="flex flex-row gap-4 items-center mt-16">
+            <div className="flex flex-row gap-4 items-center lg:mt-16">
               <div className="flex size-10 bg-orange-500 rounded-full border-2 border-black" />
-              <h3 className="text-4xl font-medium">1. My-rabit.com | SAAS</h3>
+              <h3 className="text-2xl lg:text-4xl font-medium">
+                1. My-rabit.com | SAAS
+              </h3>
             </div>
             <p className="flex max-w-[750px] text-sm lg:text-md font-medium px-4 mt-8 text-pretty">
               Introducing our all-in-one SaaS platform designed for content
@@ -43,15 +50,15 @@ const Projects = () => {
               your online presence and maximize your earning potential with our
               versatile tools!
             </p>
-            <div className="flex flex-row gap-4 mt-12 px-4">
+            <div className="flex flex-col lg:flex-row gap-4 mt-12 px-4">
               <Link href="https://my-rabit.com" target="_blank">
-                <div className="flex flex-row gap-4 items-center justify-center px-8 py-4 text-2xl font-semibold text-white  bg-orange-500 rounded-2xl">
+                <div className="flex flex-row gap-4 items-center justify-center px-8 py-3 text-xl font-semibold text-white border border-orange-500 bg-orange-500 rounded-2xl">
                   Visit webiste
                   <MdOpenInNew className="size-10" />
                 </div>
               </Link>
 
-              <div className="flex flex-row gap-4 items-center justify-center px-8 py-4 text-2xl font-semibold text-orange-500 border border-orange-500 rounded-2xl">
+              <div className="flex flex-row gap-4 items-center justify-center px-8 py-3 text-xl font-semibold text-orange-500 border border-orange-500 rounded-2xl">
                 More info
                 <IoIosArrowDropdown className="size-10" />
               </div>
@@ -317,7 +324,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-8 lg:flex-row justify-between relative">
+        <div className="flex flex-col-reverse gap-8 lg:flex-row justify-between relative lg:mt-12">
           <div className="flex flex-col w-full items-center justify-center">
             <div
               style={{
@@ -607,7 +614,15 @@ const Projects = () => {
             <div className="flex flex-row gap-2 items-center mt-16">
               <h3 className="text-4xl font-medium">Made from scratch with</h3>
             </div>
-            <p className="flex max-w-[750px] text-sm lg:text-md font-medium  mt-8 text-pretty">
+            <div className="flex flex-row justify-around items-center text-orange-500 mt-16 mb-4 w-full">
+              <SiTypescript className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
+              <FaReact className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
+              <SiNextdotjs className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
+              <SiTailwindcss className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
+              <SiPrisma className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
+              <BiLogoPostgresql className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
+            </div>
+            <p className="flex max-w-[750px] text-sm lg:text-md font-medium  mt-8  mb-16 text-pretty ">
               Our SaaS platform was created using cutting-edge technologies for
               optimal performance and user experience. We built it with
               TypeScript, Next.js, and Prisma for efficient and scalable
@@ -619,21 +634,15 @@ const Projects = () => {
               a seamless and powerful solution for content creators and
               influencers.
             </p>
-            <div className="flex flex-row justify-around items-center text-orange-500 mt-16 w-full mb-16">
-              <SiTypescript className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
-              <FaReact className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
-              <SiNextdotjs className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
-              <SiTailwindcss className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
-              <SiPrisma className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
-              <BiLogoPostgresql className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
-            </div>
           </div>
         </div>
-        <div className="flex flex-col-reverse lg:flex-row justify-between relative my-8 lg:my-16">
+        <div className="flex flex-col lg:flex-row justify-between relative my-8 lg:my-20">
           <div className="flex flex-col inset-0 items-start justify-start mt-8 w-full ">
-            <div className="flex flex-row gap-4 items-center mt-16">
+            <div className="flex flex-row gap-4 items-center lg:mt-16">
               <div className="flex size-10 bg-orange-500 rounded-full border-2 border-black" />
-              <h3 className="text-4xl font-medium">2. Winner picker | Tool</h3>
+              <h3 className="text-2xl lg:text-4xl font-medium">
+                2. Winner picker | Tool
+              </h3>
             </div>
             <p className="flex max-w-[750px] text-sm lg:text-md font-medium px-4 mt-8 text-pretty">
               I have developed a web application using TypeScript, Next.js, and
@@ -643,12 +652,12 @@ const Projects = () => {
               transparent solution for selecting giveaway winners from YouTube
               comments.
             </p>
-            <div className="flex flex-row gap-4 mt-12 px-4">
+            <div className="flex flex-col lg:flex-row gap-4 mt-12 px-4">
               <Link
                 href="https://random-picker-ten.vercel.app/"
                 target="_blank"
               >
-                <div className="flex flex-row gap-4 items-center justify-center px-8 py-4 text-2xl font-semibold text-white  bg-orange-500 rounded-2xl">
+                <div className="flex flex-row gap-4 items-center justify-center px-8 py-3 text-xl font-semibold text-white border border-orange-500 bg-orange-500 rounded-2xl">
                   Visit webiste
                   <MdOpenInNew className="size-10" />
                 </div>
@@ -657,7 +666,7 @@ const Projects = () => {
                 href="https://github.com/jalalDev7/random-picker.git"
                 target="_blank"
               >
-                <div className="flex flex-row gap-4 items-center justify-center px-8 py-4 text-2xl font-semibold text-orange-500 border border-orange-500 rounded-2xl">
+                <div className="flex flex-row gap-4 items-center justify-center px-8 py-3 text-xl font-semibold text-orange-500 border border-orange-500 rounded-2xl">
                   Github repo
                   <FaGithub className="size-10" />
                 </div>

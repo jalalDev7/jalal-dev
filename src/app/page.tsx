@@ -146,8 +146,21 @@ export default function Home() {
           </div>
           
         </div> */}
-        <div className="flex w-full min-h-screen snap-start" id="workThree">
+        <div
+          className="flex w-full min-h-screen snap-start"
+          ref={workTwotDiv}
+          id="workThree"
+        >
           <Projects />
+        </div>
+        <div className="flex w-full min-h-screen  snap-start">
+          <GridBackgroundDemo>
+            <MaxWidthWrapper>
+              <h1 className="flex w-full items-center justify-center text-center text-6xl font-semibold text-orange-500">
+                Soon...
+              </h1>
+            </MaxWidthWrapper>
+          </GridBackgroundDemo>
         </div>
       </main>
     </Suspense>

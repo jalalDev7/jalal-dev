@@ -246,7 +246,7 @@ const RandomPicker = () => {
             </svg>
           </div>
         ) : step === 2 && platform ? (
-          <div className="flex flex-col items-center justify-center p-16 bg-base-200 gap-4">
+          <div className="flex flex-col items-center justify-center p-4 lg:p-16 bg-base-200 gap-4">
             {platform === "youtube" ? (
               <div className=" flex flex-col w-full gap-2 items-center justify-center">
                 <div className="flex flex-col w-full items-start justify-start">
