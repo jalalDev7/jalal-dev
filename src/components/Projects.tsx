@@ -19,7 +19,7 @@ const Projects = () => {
   return (
     <GridBackgroundDemo className="flex w-full dark:bg-grid-small-orange-500/[0.5] bg-grid-small-orange-500/[0.5]">
       <MaxWidthWrapper>
-        <div className="flex flex-row gap-4 items-center justify-center w-full text-black my-16">
+        <div className="flex flex-row gap-4 items-center justify-center w-full  my-16">
           <h1 className="text-xl lg:text-6xl font-bold ">
             <span className="border-l-4 border-[#F97316] bg-gradient-to-r from-[#F97316]/50 to-[#FF8D86]/15 p-2 ">
               Explore
@@ -38,7 +38,7 @@ const Projects = () => {
                 1. My-rabit.com | SAAS
               </h3>
             </div>
-            <p className="flex max-w-[750px] text-sm lg:text-md font-medium px-4 mt-8 text-pretty">
+            <p className="flex max-w-[750px] text-sm lg:text-lg font-normal px-4 mt-8 text-pretty">
               Introducing our all-in-one SaaS platform designed for content
               creators and influencers! Our website provides a customizable link
               where you can showcase all your social media profiles, making it
@@ -622,7 +622,7 @@ const Projects = () => {
               <SiPrisma className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
               <BiLogoPostgresql className="size-10 lg:size-16 hover:scale-125 duration-500 transition-all ease-in-out" />
             </div>
-            <p className="flex max-w-[750px] text-sm lg:text-md font-medium  mt-8  mb-16 text-pretty ">
+            <p className="flex max-w-[750px] text-sm lg:text-lg font-normal  mt-8  mb-16 text-pretty ">
               Our SaaS platform was created using cutting-edge technologies for
               optimal performance and user experience. We built it with
               TypeScript, Next.js, and Prisma for efficient and scalable
@@ -644,7 +644,7 @@ const Projects = () => {
                 2. Winner picker | Tool
               </h3>
             </div>
-            <p className="flex max-w-[750px] text-sm lg:text-md font-medium px-4 mt-8 text-pretty">
+            <p className="flex max-w-[750px] text-sm lg:text-lg font-normal px-4 mt-8 text-pretty">
               I have developed a web application using TypeScript, Next.js, and
               React.js. The purpose of this app is to pick winners from YouTube
               comments via a video link, using the Google API. It is free to use

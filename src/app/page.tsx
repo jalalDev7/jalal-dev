@@ -1,44 +1,38 @@
 "use client";
 import HeroSection from "@/components/HeroSection";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import ProductTemplate from "@/components/ProductTemplate";
 import WebDevSection from "@/components/WebDevSection";
-import AvatarList from "@/components/ui/AvatarList";
 import { GridBackgroundDemo } from "@/components/ui/BackgroundGrid";
-import ClickMeButton from "@/components/ui/ClickMeButton";
-import { LampContainer } from "@/components/ui/lamp";
-import { SparklesPreview } from "@/components/SparklesComponent";
-import SliderShow from "@/components/SliderShow";
 import { Suspense, useRef } from "react";
 import LoadingPage from "@/components/LoadingPage";
-import { MdBusinessCenter, MdOpenInNew } from "react-icons/md";
-import Link from "next/link";
-import {
-  SiNextdotjs,
-  SiPolywork,
-  SiPrisma,
-  SiTailwindcss,
-  SiTypescript,
-} from "react-icons/si";
-import { TbBasketDollar } from "react-icons/tb";
-import { FaGithub, FaReact } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { IoIosArrowDropdown } from "react-icons/io";
-import RandomPicker from "@/components/RandomPicker";
 import Projects from "@/components/Projects";
+import { MdDarkMode } from "react-icons/md";
+import { IoSunny } from "react-icons/io5";
+import { useTheme } from "next-themes";
 
 export default function Home() {
   const startDiv = useRef<HTMLDivElement>(null);
   const workDiv = useRef<HTMLDivElement>(null);
   const workTwotDiv = useRef<HTMLDivElement>(null);
+  const { setTheme, resolvedTheme } = useTheme();
   return (
     <Suspense fallback={<LoadingPage />}>
-      <main className="flex min-h-screen flex-col w-full bg-zinc-100 snap-y snap-proximity overflow-x-clip text-black">
+      <main className="flex min-h-screen flex-col w-full bg-zinc-100 dark:bg-slate-950 snap-y snap-proximity overflow-x-clip text-black dark:text-white relative">
         <div
           className="flex w-full min-h-screen snap-start"
           ref={startDiv}
           id="startSection"
         >
+          <div className="absolute flex top-4 right-4 border-2 border-black dark:border-white rounded-full p-2">
+            <MdDarkMode
+              className="size-6 dark:opacity-10 cursor-pointer dark:cursor-default"
+              onClick={() => setTheme("dark")}
+            />
+            <IoSunny
+              className="size-6 opacity-10 dark:opacity-100 dark:cursor-pointer "
+              onClick={() => setTheme("light")}
+            />
+          </div>
           <MaxWidthWrapper className="snap-start min-h-screen">
             <div className="z-50 absolute top-0 left-0 inset-0 grid grid-cols-5 h-12 items-center justify-center py-2 text-sm 2xl:text-lg lg:text-lg">
               <div className="group flex w-full h-full rounded-lg items-center justify-center  font-semibold cursor-pointer">
@@ -90,7 +84,7 @@ export default function Home() {
               <WebDevSection>
                 <div className="flex flex-row w-full items-center justify-center gap-2 2xl:gap-8 mt-8">
                   <button
-                    className="px-4 2xl:px-8 py-2 bg-black text-white text-lg 2xl:text-2xl lg:text-2xl border-2 border-black rounded-lg"
+                    className="px-4 2xl:px-8 py-2 dark:bg-white dark:text-black darkborder-white bg-black text-white text-lg 2xl:text-2xl lg:text-2xl border-2 border-black rounded-lg"
                     onClick={() => {
                       workTwotDiv.current?.scrollIntoView({
                         behavior: "smooth",
@@ -99,7 +93,7 @@ export default function Home() {
                   >
                     Explore more
                   </button>
-                  <button className="px-4 2xl:px-8 py-2  text-black text-lg 2xl:text-2xl lg:text-2xl border-2 border-black rounded-lg">
+                  <button className="px-4 2xl:px-8 py-2 dark:text-white dark:border-white text-black text-lg 2xl:text-2xl lg:text-2xl border-2 border-black rounded-lg">
                     Hire me
                   </button>
                 </div>

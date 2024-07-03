@@ -84,7 +84,7 @@ const RandomPicker = () => {
           setError(1);
         });
     }
-  }, [step]);
+  }, [step, videoId]);
 
   return (
     <main className="flex flex-col w-full items-center justify-center gap-8 px-4 text-orange-500 mb-16">
