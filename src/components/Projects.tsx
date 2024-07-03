@@ -14,6 +14,7 @@ import {
 } from "react-icons/si";
 import { TbBasketDollar } from "react-icons/tb";
 import { IoIosArrowDropdown } from "react-icons/io";
+import HireMeDialog from "./HireMeDialog";
 
 const Projects = () => {
   return (
@@ -57,11 +58,12 @@ const Projects = () => {
                   <MdOpenInNew className="size-10" />
                 </div>
               </Link>
-
-              <div className="flex flex-row gap-4 items-center justify-center px-8 py-3 text-xl font-semibold text-orange-500 border border-orange-500 rounded-2xl">
-                More info
-                <IoIosArrowDropdown className="size-10" />
-              </div>
+              <HireMeDialog>
+                <div className="flex flex-row gap-4 items-center justify-center px-8 py-3 text-xl font-semibold text-orange-500 border border-orange-500 rounded-2xl">
+                  More info
+                  <IoIosArrowDropdown className="size-10" />
+                </div>
+              </HireMeDialog>
             </div>
             <div className="flex flex-col w-full mt-4 text-xs px-4">
               <h5 className="font-semibold">Demo account :</h5>
