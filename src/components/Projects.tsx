@@ -68,7 +68,7 @@ const Projects = () => {
               <h5>
                 <span className="font-semibold">Email : </span>
                 myrabitdemo@gmail.com |{" "}
-                <span className="font-semibold">Passowrd : </span> myrabit-2024
+                <span className="font-semibold">Passowrd : </span> myrabit2024
               </h5>
             </div>
           </div>
