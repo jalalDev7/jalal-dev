@@ -9,6 +9,7 @@ import Projects from "@/components/Projects";
 import { MdDarkMode } from "react-icons/md";
 import { IoSunny } from "react-icons/io5";
 import { useTheme } from "next-themes";
+import HireMeDialog from "@/components/HireMeDialog";
 
 export default function Home() {
   const startDiv = useRef<HTMLDivElement>(null);
@@ -48,7 +49,7 @@ export default function Home() {
                     workDiv.current?.scrollIntoView({ behavior: "smooth" });
                   }}
                 >
-                  Work
+                  My work
                   <div className=" group-active:scale-x-100 group-active:opacity-100 transition-all duration-200 ease-in-out scale-x-0 group-hover:scale-x-100 group-hover:opacity-100 opacity-0 w-full absolute bottom-0 left-0 h-1.5 rounded-lg bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500" />
                 </div>
               </div>
@@ -58,18 +59,22 @@ export default function Home() {
                   <div className="  opacity-100 w-full absolute bottom-0 left-0 h-1.5 rounded-lg bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500" />
                 </div>
               </div>
-              <div className="group flex w-full h-full rounded-lg items-center justify-center  font-semibold cursor-pointer">
-                <div className="relative py-1">
-                  Hire me
-                  <div className=" group-active:scale-x-100 group-active:opacity-100 transition-all duration-200 ease-in-out scale-x-0 group-hover:scale-x-100 group-hover:opacity-100 opacity-0 w-full absolute bottom-0 left-0 h-1.5 rounded-lg bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500" />
+              <HireMeDialog>
+                <div className="group flex w-full h-full rounded-lg items-center justify-center  font-semibold cursor-pointer">
+                  <div className="relative py-1">
+                    Hire me
+                    <div className=" group-active:scale-x-100 group-active:opacity-100 transition-all duration-200 ease-in-out scale-x-0 group-hover:scale-x-100 group-hover:opacity-100 opacity-0 w-full absolute bottom-0 left-0 h-1.5 rounded-lg bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500" />
+                  </div>
                 </div>
-              </div>
-              <div className="group flex w-full h-full rounded-lg items-center justify-center font-semibold cursor-pointer">
-                <div className="relative py-1">
-                  Contact
-                  <div className=" group-active:scale-x-100 group-active:opacity-100 transition-all duration-200 ease-in-out scale-x-0 group-hover:scale-x-100 group-hover:opacity-100 opacity-0 w-full absolute bottom-0 left-0 h-1.5 rounded-lg bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500" />
+              </HireMeDialog>
+              <HireMeDialog>
+                <div className="group flex w-full h-full rounded-lg items-center justify-center font-semibold cursor-pointer">
+                  <div className="relative py-1">
+                    Contact
+                    <div className=" group-active:scale-x-100 group-active:opacity-100 transition-all duration-200 ease-in-out scale-x-0 group-hover:scale-x-100 group-hover:opacity-100 opacity-0 w-full absolute bottom-0 left-0 h-1.5 rounded-lg bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500" />
+                  </div>
                 </div>
-              </div>
+              </HireMeDialog>
             </div>
             <HeroSection />
           </MaxWidthWrapper>
@@ -93,9 +98,11 @@ export default function Home() {
                   >
                     Explore more
                   </button>
-                  <button className="px-4 2xl:px-8 py-2 dark:text-white dark:border-white text-black text-lg 2xl:text-2xl lg:text-2xl border-2 border-black rounded-lg">
-                    Hire me
-                  </button>
+                  <HireMeDialog>
+                    <button className="px-4 2xl:px-8 py-2 dark:text-white dark:border-white text-black text-lg 2xl:text-2xl lg:text-2xl border-2 border-black rounded-lg">
+                      Hire me
+                    </button>
+                  </HireMeDialog>
                 </div>
               </WebDevSection>
             </MaxWidthWrapper>
