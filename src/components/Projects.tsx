@@ -63,6 +63,14 @@ const Projects = () => {
                 <IoIosArrowDropdown className="size-10" />
               </div>
             </div>
+            <div className="flex flex-col w-full mt-4 text-xs px-4">
+              <h5 className="font-semibold">Demo account :</h5>
+              <h5>
+                <span className="font-semibold">Email : </span>
+                myrabitdemo@gmail.com |{" "}
+                <span className="font-semibold">Passowrd : </span> myrabit-2024
+              </h5>
+            </div>
           </div>
           <div className="flex flex-col w-full items-center justify-center">
             <div className="flex flex-col w-full items-center justify-center">
