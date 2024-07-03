@@ -23,13 +23,13 @@ export default function Home() {
           ref={startDiv}
           id="startSection"
         >
-          <div className="absolute flex top-4 right-4 border-2 border-black dark:border-white rounded-full p-2">
+          <div className="absolute z-50 flex top-12 lg:top-4 right-2 lg:right-4 border-2 border-black dark:border-white rounded-full p-2">
             <MdDarkMode
-              className="size-6 dark:opacity-10 cursor-pointer dark:cursor-default"
+              className="size-4 lg:size-6 dark:opacity-10 cursor-pointer dark:cursor-default"
               onClick={() => setTheme("dark")}
             />
             <IoSunny
-              className="size-6 opacity-10 dark:opacity-100 dark:cursor-pointer "
+              className="size-4 lg:size-6 opacity-10 dark:opacity-100 dark:cursor-pointer "
               onClick={() => setTheme("light")}
             />
           </div>

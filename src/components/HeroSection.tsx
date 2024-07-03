@@ -10,7 +10,7 @@ import { SiYoutubemusic } from "react-icons/si";
 
 const HeroSection = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 2xl:flex-row gap-2 lg:gap-8 w-full min-h-screen  pt-12 relative">
+    <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 2xl:flex-row gap-2 lg:gap-8 w-full min-h-screen  pt-16 lg:pt-0 relative">
       <BackgroundBeams className="z-0" />
       <div className="flex w-full h-full items-end justify-center 2xl:items-center 2xl:justify-end lg:items-center lg:justify-end">
         <Avatar className=" 2xl:h-[500px] 2xl:w-[500px] lg:h-96 lg:w-96 h-72 w-72 shadow-lg shadow-slate-900/50 ">
@@ -43,36 +43,37 @@ const HeroSection = () => {
         <div className="flex flex-col w-full pl-2 2xl:pl-4 lg:pl-4 gap-2 text-lg  mt-2">
           <div className="flex flex-row 2xl:gap-6 lg:gap-6 gap-2 items-center">
             <svg
-              viewBox="0 0 1024 1024"
               width="40px"
               height="40px"
+              viewBox="0 0 14 14"
+              role="img"
+              focusable="false"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
               fill="#000000"
             >
-              <g></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               ></g>
-              <g>
+              <g id="SVGRepo_iconCarrier">
                 <path
-                  d="M512 960c-92.8 0-160-200-160-448S419.2 64 512 64s160 200 160 448-67.2 448-160 448z m0-32c65.6 0 128-185.6 128-416S577.6 96 512 96s-128 185.6-128 416 62.4 416 128 416z"
-                  fill="#050D42"
+                  fill="#ff9800"
+                  d="M13 5.2V4h-3V1H8.8v3H7.6V1H6.4v3H5.2V1H4v3H1v1.2h3v1.2H1v1.2h3v1.2H1V10h3v3h1.2v-3h1.2v3h1.2v-3h1.2v3H10v-3h3V8.8h-3V7.6h3V6.4h-3V5.2h3z"
                 ></path>
                 <path
-                  d="M124.8 736c-48-80 92.8-238.4 307.2-363.2S852.8 208 899.2 288 806.4 526.4 592 651.2 171.2 816 124.8 736z m27.2-16c33.6 57.6 225.6 17.6 424-97.6S905.6 361.6 872 304 646.4 286.4 448 401.6 118.4 662.4 152 720z"
-                  fill="#050D42"
+                  fill="#4caf50"
+                  d="M2.2 3.4v7.2c0 .66.54 1.2 1.2 1.2h7.2c.66 0 1.2-.54 1.2-1.2V3.4c0-.66-.54-1.2-1.2-1.2H3.4c-.66 0-1.2.54-1.2 1.2z"
                 ></path>
                 <path
-                  d="M899.2 736c-46.4 80-254.4 38.4-467.2-84.8S76.8 368 124.8 288s254.4-38.4 467.2 84.8S947.2 656 899.2 736z m-27.2-16c33.6-57.6-97.6-203.2-296-318.4S184 246.4 152 304 249.6 507.2 448 622.4s392 155.2 424 97.6z"
-                  fill="#050D42"
-                ></path>
-                <path
-                  d="M512 592c-44.8 0-80-35.2-80-80s35.2-80 80-80 80 35.2 80 80-35.2 80-80 80zM272 312c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48zM416 880c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z m448-432c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z"
-                  fill="#2F4BFF"
+                  fill="#37474f"
+                  d="M9.1 9.1H4.9c-.33 0-.6-.27-.6-.6v-3c0-.33.27-.6.6-.6h4.2c.33 0 .6.27.6.6v3c0 .33-.27.6-.6.6z"
                 ></path>
               </g>
             </svg>
+
             <h3>Tech lover</h3>
           </div>
           <div className="flex flex-row 2xl:gap-6 lg:gap-6 gap-2 items-center">
