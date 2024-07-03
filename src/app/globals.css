@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
 
 @layer base {
   :root {
@@ -48,4 +47,7 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
   }
+}
+* {
+  scroll-behavior: smooth;
 }
