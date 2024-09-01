@@ -7,6 +7,7 @@ import { BackgroundBeams } from "./ui/Background-beams";
 import { FaTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import { SiYoutubemusic } from "react-icons/si";
+import { IoLogoLinkedin } from "react-icons/io5";
 
 const HeroSection = () => {
   return (
@@ -217,16 +218,25 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="z-50 grid grid-cols-4 2xl:flex 2xl:flex-row lg:flex lg:flex-row w-full gap-4 2xl:gap-8 lg:gap-6 mt-6 2xl:pl-4 lg:pl-4">
-          <div className="flex items-center justify-center">
-            <Link href="https://www.youtube.com/jalalhitech" target="_blank">
-              <SiYoutubemusic className="w-12 h-12 hover:text-orange-500 transition-all duration-500 ease-in-out" />
-            </Link>
-          </div>
           <div className="flex  items-center justify-center">
             <Link href="https://github.com/jalalDev7" target="_blank">
               <FaGithub className="w-12 h-12 hover:text-orange-500 transition-all duration-500 ease-in-out" />
             </Link>
           </div>
+          <div className="flex  items-center justify-center">
+            <Link
+              href="https://www.linkedin.com/in/mohamed-jalal-chtakatak-1b8207291/"
+              target="_blank"
+            >
+              <IoLogoLinkedin className="w-12 h-12 hover:text-orange-500 transition-all duration-500 ease-in-out" />
+            </Link>
+          </div>
+          <div className="flex items-center justify-center">
+            <Link href="https://www.youtube.com/jalalhitech" target="_blank">
+              <SiYoutubemusic className="w-12 h-12 hover:text-orange-500 transition-all duration-500 ease-in-out" />
+            </Link>
+          </div>
+
           <div className="flex items-center justify-center">
             <Link href="https://www.instagram.com/jalalhitech" target="_blank">
               <FaInstagram className="w-12 h-12 hover:text-orange-500 transition-all duration-500 ease-in-out" />
