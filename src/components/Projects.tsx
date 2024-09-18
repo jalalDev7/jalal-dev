@@ -731,7 +731,7 @@ const Projects = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 500 500"
-              className="size-[550px] "
+              className="size-[400px] md:size-[550px] "
             >
               <defs>
                 <clipPath id="freepik--clip-path--inject-62">
