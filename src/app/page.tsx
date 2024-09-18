@@ -15,13 +15,12 @@ import AvatarList from "@/components/ui/AvatarList";
 import ProductTemplate from "@/components/ProductTemplate";
 import SliderShow from "@/components/SliderShow";
 import { LampContainer } from "@/components/ui/lamp";
-import { SparklesPreview } from "@/components/SparklesComponent";
 
 export default function Home() {
   const startDiv = useRef<HTMLDivElement>(null);
   const workDiv = useRef<HTMLDivElement>(null);
   const workTwotDiv = useRef<HTMLDivElement>(null);
-  const { setTheme, resolvedTheme } = useTheme();
+  const { setTheme } = useTheme();
   return (
     <Suspense fallback={<LoadingPage />}>
       <main className="flex min-h-screen flex-col w-full bg-zinc-100 dark:bg-slate-950 snap-y snap-proximity overflow-x-clip text-black dark:text-white relative">
@@ -125,7 +124,6 @@ export default function Home() {
 
         <div
           className="flex flex-col  dark:bg-slate-950 grid-cols-1 gap-0 w-full min-h-screen items-start justify-start relative dark:text-white snap-start pb-4"
-          ref={workTwotDiv}
           id="componentSection"
         >
           <LampContainer className=" w-full h-fit relative hidden dark:flex ">
