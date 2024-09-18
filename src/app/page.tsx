@@ -124,34 +124,37 @@ export default function Home() {
         </div>
 
         <div
-          className="flex flex-col  bg-slate-950 grid-cols-1 gap-0 w-full min-h-screen items-start justify-start relative text-white snap-start pb-4"
+          className="flex flex-col  dark:bg-slate-950 grid-cols-1 gap-0 w-full min-h-screen items-start justify-start relative dark:text-white snap-start pb-4"
           ref={workTwotDiv}
           id="componentSection"
         >
-          <LampContainer className="flex w-full h-fit relative ">
+          <LampContainer className=" w-full h-fit relative hidden dark:flex ">
             <div className="-translate-y-12 2xl:-translate-y-6 text-xl lg:text-5xl 2xl:text-7xl font-semibold pb-8 drop-shadow-[5px_5px_8px_#02a9ac] bg-clip-text text-transparent bg-gradient-to-b from-cyan-400 from-10% to-cyan-100 to-70% ">
               Custom-Built Interface Elements
             </div>
           </LampContainer>
+          <div className="mt-8 mb-16 flex dark:hidden w-full items-center justify-center -translate-y-12 2xl:-translate-y-6 text-xl lg:text-5xl 2xl:text-7xl font-semibold pb-8 drop-shadow-[5px_5px_8px_#FFBE00]/50 bg-clip-text text-transparent bg-gradient-to-b from-orange-400 from-10% to-orange-100 to-70% ">
+            Custom-Built Interface Elements
+          </div>
           <div className="flex w-full -translate-y-8">
             <MaxWidthWrapper>
               <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 w-full gap-8 transition-all duration-500 ease-in-out">
-                <div className="flex flex-col w-full items-center justify-center  p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
+                <div className="flex flex-col w-full items-center justify-center bg-slate-950  p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
                   <div className="group cursor-pointer flex text-2xl font-semibold bg-slate-950 rounded-lg  border-blue-500 border-2 relative hover:shadow-lg hover:shadow-blue-500 transition-all duration-500 ease-in-out">
-                    <div className="z-0 absolute flex w-full h-full bg-blue-500 border-blue-500 border-2  rounded-sm scale-x-0 group-hover:scale-x-100 transition-all duration-500 ease-in-out" />
-                    <h1 className="px-8 py-2 z-10">Hover me</h1>
+                    <div className="z-0 absolute flex w-full h-full  bg-blue-500 border-blue-500 border-2  rounded-sm scale-x-0 group-hover:scale-x-100 transition-all duration-500 ease-in-out" />
+                    <h1 className="px-8 py-2 z-10 text-white">Hover me</h1>
                   </div>
                 </div>
-                <div className="flex flex-col items-center justify-center  p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
+                <div className="flex flex-col items-center justify-center bg-slate-950 text-white p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
                   <ClickMeButton />
                 </div>
-                <div className="flex flex-col lg:col-span-2 2xl:col-span-1 w-full text-2xl items-center justify-center  py-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
+                <div className="flex flex-col lg:col-span-2 2xl:col-span-1 bg-slate-950 w-full text-2xl items-center justify-center  py-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
                   <AvatarList />
                 </div>
                 <div className="flex flex-col text-2xl lg:col-span-2 2xl:col-span-1 items-center justify-center ">
                   <ProductTemplate />
                 </div>
-                <div className="2xl:col-span-2  hidden 2xl:flex flex-col text-2xl w-full items-center justify-center p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
+                <div className="2xl:col-span-2 bg-slate-950 hidden 2xl:flex flex-col text-2xl w-full items-center justify-center p-8 rounded-2xl border-2 border-cyan-500/60  hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-500 ease-in-out">
                   <SliderShow />
                 </div>
               </div>
