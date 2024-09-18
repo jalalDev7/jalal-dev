@@ -684,9 +684,8 @@ const Projects = () => {
               src="/screenshot-digimarket.png"
               height={1538}
               width={862}
-              objectFit="cover"
               alt="screenshot"
-              className="object-cover rounded-xl"
+              className="object-cover rounded-xl mt-8 md:mt-0"
             />
           </div>
         </div>
