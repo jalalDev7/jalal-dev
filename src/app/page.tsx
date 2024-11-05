@@ -6,7 +6,7 @@ import { GridBackgroundDemo } from "@/components/ui/BackgroundGrid";
 import { Suspense, useRef } from "react";
 import LoadingPage from "@/components/LoadingPage";
 import Projects from "@/components/Projects";
-import { MdDarkMode } from "react-icons/md";
+import { MdDarkMode, MdOpenInNew } from "react-icons/md";
 import { IoSunny } from "react-icons/io5";
 import { useTheme } from "next-themes";
 import HireMeDialog from "@/components/HireMeDialog";
@@ -15,6 +15,9 @@ import AvatarList from "@/components/ui/AvatarList";
 import ProductTemplate from "@/components/ProductTemplate";
 import SliderShow from "@/components/SliderShow";
 import { LampContainer } from "@/components/ui/lamp";
+import Image from "next/image";
+import { FaGithub } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function Home() {
   const startDiv = useRef<HTMLDivElement>(null);
@@ -156,11 +159,64 @@ export default function Home() {
           </div>
         </GridBackgroundDemo>
         <div className="flex w-full min-h-screen  snap-start">
-          <GridBackgroundDemo>
+          <GridBackgroundDemo className={"items-start justify-start"}>
             <MaxWidthWrapper>
-              <h1 className="flex w-full items-center justify-center text-center text-6xl font-semibold text-orange-500">
-                Soon...
-              </h1>
+              <div className=" mb-8 flex w-full items-center justify-center -translate-y-12 2xl:-translate-y-6 text-center text-3xl lg:text-5xl 2xl:text-7xl font-semibold pb-8 drop-shadow-[5px_5px_8px_#FFBE00]/50 bg-clip-text text-transparent bg-gradient-to-b from-orange-400 from-10% to-orange-100 to-70% ">
+                There is always more
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
+                <div className="flew flex-col w-full rounded-lg border-2 border-cyan-500/60 relative p-2">
+                  <Image
+                    src="/alif-thumbnail.jpg"
+                    width={800}
+                    height={800}
+                    className="aspect-video object-cover rounded-lg"
+                    alt="alif thumbnail"
+                  />
+                  <div className="flex flex-row items-center gap-4 absolute bottom-4 right-4">
+                    <div className="flex flex-row items-center text-black rounded-lg bg-gradient-to-b from-orange-400 from-10% to-orange-100 to-70% p-2">
+                      <Link
+                        href="https://github.com/jalalDev7/alif"
+                        target="_blank"
+                      >
+                        <FaGithub className="size-6 shadow-md" />
+                      </Link>
+                    </div>
+                    <div className="flex flex-row items-center text-black rounded-lg bg-gradient-to-b from-orange-400 from-10% to-orange-100 to-70% p-2">
+                      <Link href="https://alif-mu.vercel.app/" target="_blank">
+                        <MdOpenInNew className="size-6 shadow-md" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="flew flex-col w-full rounded-lg border-2 border-cyan-500/60 relative p-2">
+                  <Image
+                    src="/funtime-thumbnail.jpg"
+                    width={800}
+                    height={800}
+                    className="aspect-video object-cover rounded-lg"
+                    alt="alif thumbnail"
+                  />
+                  <div className="flex flex-row items-center gap-4 absolute bottom-4 right-4">
+                    <div className="flex flex-row items-center text-black rounded-lg bg-gradient-to-b from-orange-400 from-10% to-orange-100 to-70%  p-2">
+                      <Link
+                        href="https://github.com/jalalDev7/funtime"
+                        target="_blank"
+                      >
+                        <FaGithub className="size-6 shadow-md" />
+                      </Link>
+                    </div>
+                    <div className="flex flex-row items-center text-black rounded-lg bg-gradient-to-b from-orange-400 from-10% to-orange-100 to-70% p-2">
+                      <Link
+                        href="https://funtime-two.vercel.app/"
+                        target="_blank"
+                      >
+                        <MdOpenInNew className="size-6 shadow-md" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </MaxWidthWrapper>
           </GridBackgroundDemo>
         </div>
