@@ -165,54 +165,77 @@ export default function Home() {
                 There is always more
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
-                <div className="flew flex-col w-full rounded-lg border-2 border-cyan-500/60 relative p-2">
+                <div className="flew flex-col w-full rounded-lg border-2 border-cyan-500/60 relative p-2 overflow-hidden group">
                   <Image
                     src="/alif-thumbnail.jpg"
                     width={800}
                     height={800}
-                    className="aspect-video object-cover rounded-lg"
+                    className="aspect-video object-cover rounded-lg group-hover:brightness-50 transition-all duration-300 ease-in-out"
                     alt="alif thumbnail"
                   />
-                  <div className="flex flex-row items-center gap-4 absolute bottom-4 right-4">
-                    <div className="flex flex-row items-center text-black rounded-lg bg-gradient-to-b from-orange-400 from-10% to-orange-100 to-70% p-2">
-                      <Link
-                        href="https://github.com/jalalDev7/alif"
-                        target="_blank"
-                      >
-                        <FaGithub className="size-6 shadow-md" />
-                      </Link>
-                    </div>
-                    <div className="flex flex-row items-center text-black rounded-lg bg-gradient-to-b from-orange-400 from-10% to-orange-100 to-70% p-2">
-                      <Link href="https://alif-mu.vercel.app/" target="_blank">
-                        <MdOpenInNew className="size-6 shadow-md" />
-                      </Link>
+                  <div className="absolute left-0 bottom-0 flex flex-col w-full p-4 text-white bg-gradient-to-b from-cyan-500/50 to-transparent rounded-lg translate-y-[100%] group-hover:translate-y-[0%] transition-all duration-300 ease-in-out">
+                    <h2 className="font-semibold text-xl ">
+                      ALIF PETS LOVERS PLATFORM
+                    </h2>
+                    <p className="text-sm font-medium  mt-2">
+                      Welcome to our pet-friendly platform, where finding a new
+                      pet or giving one a loving home has never been easier.{" "}
+                    </p>
+                    <div className="flex flex-row items-end justify-end gap-4 w-full mt-4">
+                      <div className="flex flex-row items-center rounded-lg text-white bg-gradient-to-b from-cyan-500/50 to-transparent p-2">
+                        <Link
+                          href="https://github.com/jalalDev7/alif"
+                          target="_blank"
+                        >
+                          <FaGithub className="size-6 shadow-md" />
+                        </Link>
+                      </div>
+                      <div className="flex flex-row items-center rounded-lg text-white bg-gradient-to-b from-cyan-500/50 to-transparent p-2">
+                        <Link
+                          href="https://alif-mu.vercel.app/"
+                          target="_blank"
+                        >
+                          <MdOpenInNew className="size-6 shadow-md" />
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="flew flex-col w-full rounded-lg border-2 border-cyan-500/60 relative p-2">
+                <div className="flew flex-col w-full rounded-lg border-2 border-cyan-500/60 relative p-2 overflow-hidden group">
                   <Image
                     src="/funtime-thumbnail.jpg"
                     width={800}
                     height={800}
-                    className="aspect-video object-cover rounded-lg"
+                    className="aspect-video object-cover rounded-lg group-hover:brightness-50 transition-all duration-300 ease-in-out"
                     alt="alif thumbnail"
                   />
-                  <div className="flex flex-row items-center gap-4 absolute bottom-4 right-4">
-                    <div className="flex flex-row items-center text-black rounded-lg bg-gradient-to-b from-orange-400 from-10% to-orange-100 to-70%  p-2">
-                      <Link
-                        href="https://github.com/jalalDev7/funtime"
-                        target="_blank"
-                      >
-                        <FaGithub className="size-6 shadow-md" />
-                      </Link>
-                    </div>
-                    <div className="flex flex-row items-center text-black rounded-lg bg-gradient-to-b from-orange-400 from-10% to-orange-100 to-70% p-2">
-                      <Link
-                        href="https://funtime-two.vercel.app/"
-                        target="_blank"
-                      >
-                        <MdOpenInNew className="size-6 shadow-md" />
-                      </Link>
+                  <div className="absolute left-0 bottom-0 flex flex-col w-full p-4 text-white bg-gradient-to-b from-cyan-500/50 to-transparent rounded-lg translate-y-[100%] group-hover:translate-y-[0%] transition-all duration-300 ease-in-out">
+                    <h2 className="font-semibold text-xl ">
+                      Discover Events Nearby and Start Hosting Your Own
+                    </h2>
+                    <p className="text-sm font-medium  mt-2">
+                      Easily find or host exciting events around you, tailored
+                      to your interests. Join a community that brings people
+                      together for memorable activities and unforgettable
+                      experiences!
+                    </p>
+                    <div className="flex flex-row items-end justify-end gap-4 w-full mt-4">
+                      <div className="flex flex-row items-center rounded-lg text-white bg-gradient-to-b from-cyan-500/50 to-transparent p-2">
+                        <Link
+                          href="https://github.com/jalalDev7/funtime"
+                          target="_blank"
+                        >
+                          <FaGithub className="size-6 shadow-md" />
+                        </Link>
+                      </div>
+                      <div className="flex flex-row items-center rounded-lg text-white bg-gradient-to-b from-cyan-500/50 to-transparent p-2">
+                        <Link
+                          href="https://funtime-two.vercel.app/"
+                          target="_blank"
+                        >
+                          <MdOpenInNew className="size-6 shadow-md" />
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
