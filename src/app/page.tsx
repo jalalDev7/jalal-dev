@@ -293,7 +293,7 @@ export default function Home() {
                     <p className="text-sm font-medium  mt-2">
                       Our newsletter subscription page template features a
                       clean, modern design with a clear call-to-action,
-                      encouraging users to subscribe effortlessly. It's fully
+                      encouraging users to subscribe effortlessly. Its fully
                       customizable to align with your brand and is optimized for
                       all devices, providing a seamless experience across
                       platforms.
