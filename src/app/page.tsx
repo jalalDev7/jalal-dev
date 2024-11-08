@@ -164,7 +164,7 @@ export default function Home() {
               <div className=" mb-8 flex w-full items-center justify-center -translate-y-12 2xl:-translate-y-6 text-center text-3xl lg:text-5xl 2xl:text-7xl font-semibold pb-8 drop-shadow-[5px_5px_8px_#FFBE00]/50 bg-clip-text text-transparent bg-gradient-to-b from-orange-400 from-10% to-orange-100 to-70% ">
                 There is always more
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8 mb-8">
                 <div className="flew flex-col w-full rounded-lg border-2 border-cyan-500/60 relative p-2 overflow-hidden group">
                   <Image
                     src="/alif-thumbnail.jpg"
@@ -231,6 +231,85 @@ export default function Home() {
                       <div className="flex flex-row items-center rounded-lg text-white bg-gradient-to-b from-cyan-500/50 to-transparent p-2">
                         <Link
                           href="https://funtime-two.vercel.app/"
+                          target="_blank"
+                        >
+                          <MdOpenInNew className="size-6 shadow-md" />
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flew flex-col w-full rounded-lg border-2 border-cyan-500/60 relative p-2 overflow-hidden group">
+                  <Image
+                    src="/chat-thumbnail.png"
+                    width={800}
+                    height={800}
+                    className="aspect-video object-cover rounded-lg group-hover:brightness-50 transition-all duration-300 ease-in-out"
+                    alt="alif thumbnail"
+                  />
+                  <div className="absolute left-0 bottom-0 flex flex-col w-full p-4 text-white bg-gradient-to-b from-cyan-500/50 to-transparent rounded-lg translate-y-[100%] group-hover:translate-y-[0%] transition-all duration-300 ease-in-out">
+                    <h2 className="font-semibold text-xl ">
+                      Chat application home page
+                    </h2>
+                    <p className="text-sm font-medium  mt-2">
+                      Our web chat application provides a seamless, real-time
+                      communication experience designed to keep users connected.
+                      With an intuitive interface and fast message delivery,
+                      users can chat individually or in groups, share multimedia
+                      files, and engage in meaningful conversations.
+                    </p>
+                    <div className="flex flex-row items-end justify-end gap-4 w-full mt-4">
+                      <div className="flex flex-row items-center rounded-lg text-white bg-gradient-to-b from-cyan-500/50 to-transparent p-2">
+                        <Link
+                          href="https://github.com/jalalDev7/custom-pages/tree/main/src/app/chat"
+                          target="_blank"
+                        >
+                          <FaGithub className="size-6 shadow-md" />
+                        </Link>
+                      </div>
+                      <div className="flex flex-row items-center rounded-lg text-white bg-gradient-to-b from-cyan-500/50 to-transparent p-2">
+                        <Link
+                          href="https://custom-pages-eight.vercel.app/chat"
+                          target="_blank"
+                        >
+                          <MdOpenInNew className="size-6 shadow-md" />
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flew flex-col w-full rounded-lg border-2 border-cyan-500/60 relative p-2 overflow-hidden group">
+                  <Image
+                    src="/newsletter-thumbnail.png"
+                    width={800}
+                    height={800}
+                    className="aspect-video object-cover rounded-lg group-hover:brightness-50 transition-all duration-300 ease-in-out"
+                    alt="alif thumbnail"
+                  />
+                  <div className="absolute left-0 bottom-0 flex flex-col w-full p-4 text-white bg-gradient-to-b from-cyan-500/50 to-transparent rounded-lg translate-y-[100%] group-hover:translate-y-[0%] transition-all duration-300 ease-in-out">
+                    <h2 className="font-semibold text-xl ">
+                      Newsletter subscribe template
+                    </h2>
+                    <p className="text-sm font-medium  mt-2">
+                      Our newsletter subscription page template features a
+                      clean, modern design with a clear call-to-action,
+                      encouraging users to subscribe effortlessly. It's fully
+                      customizable to align with your brand and is optimized for
+                      all devices, providing a seamless experience across
+                      platforms.
+                    </p>
+                    <div className="flex flex-row items-end justify-end gap-4 w-full mt-4">
+                      <div className="flex flex-row items-center rounded-lg text-white bg-gradient-to-b from-cyan-500/50 to-transparent p-2">
+                        <Link
+                          href="https://github.com/jalalDev7/custom-pages/tree/main/src/app/signup"
+                          target="_blank"
+                        >
+                          <FaGithub className="size-6 shadow-md" />
+                        </Link>
+                      </div>
+                      <div className="flex flex-row items-center rounded-lg text-white bg-gradient-to-b from-cyan-500/50 to-transparent p-2">
+                        <Link
+                          href="https://custom-pages-eight.vercel.app/signup"
                           target="_blank"
                         >
                           <MdOpenInNew className="size-6 shadow-md" />
