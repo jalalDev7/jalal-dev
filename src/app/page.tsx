@@ -359,6 +359,52 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+                <div className="flew flex-col w-full rounded-lg border-2 border-cyan-500/60 relative p-2 overflow-hidden group">
+                  <Image
+                    src="/bento.png"
+                    width={800}
+                    height={800}
+                    className="aspect-video object-cover rounded-lg group-hover:brightness-50 transition-all duration-300 ease-in-out"
+                    alt="alif thumbnail"
+                  />
+                  <div className="absolute left-0 bottom-0 flex flex-col w-full p-4 text-white bg-gradient-to-b from-cyan-500/50 to-transparent rounded-lg translate-y-[100%] group-hover:translate-y-[0%] transition-all duration-300 ease-in-out">
+                    <h2 className="font-semibold text-xl ">
+                      Bento grid design
+                    </h2>
+                    <p className="text-sm font-medium  mt-2">
+                      To grow your audience with a bento grid design, start by
+                      defining your target audience and identifying what type of
+                      content they enjoy. Next, plan a diverse content mix—use
+                      the grid to balance posts that inform, inspire, entertain,
+                      and engage. Then, schedule content consistently across
+                      days, weeks, and months, keeping a steady stream that
+                      aligns with your goals. Use feedback to optimize and
+                      adjust your approach, focusing on content that performs
+                      best. Lastly, repurpose high-performing content in
+                      different formats to keep it fresh and engaging. This
+                      approach helps sustain non-stop content while steadily
+                      growing your audience.
+                    </p>
+                    <div className="flex flex-row items-end justify-end gap-4 w-full mt-4">
+                      <div className="flex flex-row items-center rounded-lg text-white bg-gradient-to-b from-cyan-500/50 to-transparent p-2">
+                        <Link
+                          href="https://github.com/jalalDev7/custom-pages/tree/main/src/app/bento"
+                          target="_blank"
+                        >
+                          <FaGithub className="size-6 shadow-md" />
+                        </Link>
+                      </div>
+                      <div className="flex flex-row items-center rounded-lg text-white bg-gradient-to-b from-cyan-500/50 to-transparent p-2">
+                        <Link
+                          href="https://custom-pages-eight.vercel.app/bento"
+                          target="_blank"
+                        >
+                          <MdOpenInNew className="size-6 shadow-md" />
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </MaxWidthWrapper>
           </GridBackgroundDemo>
